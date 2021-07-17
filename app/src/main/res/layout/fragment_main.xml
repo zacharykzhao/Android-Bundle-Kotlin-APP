@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainFragment">-->
+
+<!--    &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:text="@string/hello_blank_fragment" />-->
+
+<!--</FrameLayout>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_base_permission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Base Permission (Location)"
+        app:fabSize="normal"
+        app:icon="@android:drawable/ic_menu_compass" />
+
+    <Button
+        android:id="@+id/btn_open_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Base Open Camera"
+        android:layout_above="@+id/btn_base_permission"
+        android:layout_alignLeft="@+id/btn_base_permission"
+
+        app:fabSize="normal"
+        app:icon="@android:drawable/ic_menu_camera" />
+
+    <TextView
+        android:id="@+id/text_bundle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Bundle:"
+        android:layout_below="@+id/btn_base_permission"
+        android:layout_alignLeft="@+id/btn_base_permission"
+        app:fabSize="normal"
+        app:icon="@android:drawable/ic_menu_compass" />
+
+    <Button
+        android:id="@+id/btn_dynamic_permission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_bundle"
+        android:layout_alignLeft="@+id/text_bundle"
+        android:layout_centerInParent="true"
+        android:text="Bundle Request Camera"
+        app:icon="@android:drawable/ic_menu_add" />
+
+
+
+</RelativeLayout>
